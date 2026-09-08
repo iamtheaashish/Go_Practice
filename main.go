@@ -3,6 +3,6 @@ package main
 import "fmt"
 
 func main(){
-	var x int = 10;
+	var x rune = 'a';
 	fmt.Println(x);
 }
