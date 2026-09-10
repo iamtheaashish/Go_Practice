@@ -2,15 +2,11 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main(){
-	var b byte = math.MaxUint8
-	var smallI int32 = math.MaxInt32
-	var bigI uint64 = math.MaxUint64
+	var x = [3]int{10, 20, 30}
+	var y = [...]int{10, 20, 30}
 
-	fmt.Println(b)
-	fmt.Println(smallI)
-	fmt.Println((bigI))
+	fmt.Println(x != y)
 }
