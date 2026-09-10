@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main(){
-	a := "hello"
-	a := "goodbye"
-	fmt.Println(a)
-	fmt.Println(a)
+	var i int = 20
+	var f float64 = float64(i)
+	fmt.Println(i)
+	fmt.Println(f)
 }
