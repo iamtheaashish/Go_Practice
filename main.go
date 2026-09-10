@@ -5,8 +5,8 @@ import (
 )
 
 func main(){
-	var x = [3]int{10, 20, 30}
-	//var y = [...]int{10, 20, 30}
+	var x = []int{10, 20, 30}
+	// slice
 
 	fmt.Println(len(x))
 }
