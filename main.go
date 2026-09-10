@@ -1,18 +1,16 @@
 package main
 
-import "fmt"
-
-const x int64 = 10
-const (
-	idKey = "id"
-	nameKey = "name"
+import (
+	"fmt"
+	"math"
 )
 
-const z = 20 * 10
-
 func main(){
-	const y = "hello"
+	var b byte = math.MaxUint8
+	var smallI int32 = math.MaxInt32
+	var bigI uint64 = math.MaxUint64
 
-	fmt.Println(x)
-	fmt.Println(y)
+	fmt.Println(b)
+	fmt.Println(smallI)
+	fmt.Println((bigI))
 }
