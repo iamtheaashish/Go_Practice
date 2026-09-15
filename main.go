@@ -3,26 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	// while loop
-	// i := 1
-	// for i <= 3{
-	// 	fmt.Println(i)
-	// 	i = i + 1
-	// }
-	// while infinite loop
-	// for {
-	// 	fmt.Println("2")
-	// }
-	// for i := 0; i <= 3; i++{
-		
-	// 	if i == 2 {
-	// 		continue
-	// 	}
-	// 	fmt.Println(i)
-	// }
-
-	// for i := range 11{
-	// 	fmt.Println(i)
-	// }
+	age := 16
+	
+	if age >= 18 {
+		fmt.Println("Person is an adult.")
+	} else if age >= 12 {
+		fmt.Println("Person is a teen")
+	} else if age <= 11 {
+		fmt.Println("Person is a kid")
+	}
 
 }
