@@ -5,8 +5,9 @@ import (
 )
 
 func main(){
-	x := make([]int, 5)
-	x = append(x, 20)
-	fmt.Println(x, len(x), cap(x))
+	s := []string{"first", "second", "third"}
+	fmt.Println(s, len(s))
+	clear(s)
+	fmt.Println(s, len(s))
 	
 }
