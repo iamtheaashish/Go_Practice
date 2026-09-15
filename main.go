@@ -13,13 +13,16 @@ func main() {
 	// for {
 	// 	fmt.Println("2")
 	// }
-
-	for i := 0; i <= 3; i++{
+	// for i := 0; i <= 3; i++{
 		
-		if i == 2 {
-			continue
-		}
-		fmt.Println(i)
-	}
+	// 	if i == 2 {
+	// 		continue
+	// 	}
+	// 	fmt.Println(i)
+	// }
+
+	// for i := range 11{
+	// 	fmt.Println(i)
+	// }
 
 }
