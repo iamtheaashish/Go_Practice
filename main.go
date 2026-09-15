@@ -2,18 +2,24 @@ package main
 
 import "fmt"
 
-const age = 20
 func main() {
-	const name string = "golang"
-	
-	fmt.Print(age)
+	// while loop
+	// i := 1
+	// for i <= 3{
+	// 	fmt.Println(i)
+	// 	i = i + 1
+	// }
+	// while infinite loop
+	// for {
+	// 	fmt.Println("2")
+	// }
 
-	const (
-		port = 5000
-		host = "localhost"
-	)
-
-	fmt.Println(port)
-	fmt.Println(host)
+	for i := 0; i <= 3; i++{
+		
+		if i == 2 {
+			continue
+		}
+		fmt.Println(i)
+	}
 
 }
