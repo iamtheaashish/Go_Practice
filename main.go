@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello World")
-	fmt.Println(56+44)
+	var name = "golang"
+	var name1 string = "golang"
 
-	fmt.Println(45 % 5 == 0)
+	fmt.Println(name1 + " " + name)
 }
