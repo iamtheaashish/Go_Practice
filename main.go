@@ -2,9 +2,18 @@ package main
 
 import "fmt"
 
+const age = 20
 func main() {
-	var price float32 = 56.34343
+	const name string = "golang"
+	
+	fmt.Print(age)
 
-	fmt.Println(price)
+	const (
+		port = 5000
+		host = "localhost"
+	)
+
+	fmt.Println(port)
+	fmt.Println(host)
 
 }
