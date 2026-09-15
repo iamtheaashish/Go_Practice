@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	var name = "golang"
-	var name1 string = "golang"
+	var price float32 = 56.34343
 
-	fmt.Println(name1 + " " + name)
+	fmt.Println(price)
+
 }
