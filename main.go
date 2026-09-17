@@ -33,5 +33,10 @@ func main() {
 // 	fmt.Println(len(nums), cap(nums2))
 // 
 
-	//
+// slice operator
+	var nums = []int{1,2,3}
+
+	fmt.Println(nums[1:2])
+
+
 }
