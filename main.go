@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 func main() {
 	// most used construct in go
@@ -34,9 +37,12 @@ func main() {
 // 
 
 // slice operator
-	var nums = []int{1,2,3}
+	// var nums = []int{1,2,3}
 
-	fmt.Println(nums[1:2])
+	// fmt.Println(nums[1:2])
+	var nums1 = []int{1,2,3}
+	var nums2 = []int{1,2,3}
 
+	fmt.Println(slices.Equal(nums1, nums2))
 
 }
