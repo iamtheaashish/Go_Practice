@@ -1,13 +1,16 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	var bums []int
-	var nums = make([]int, 3) // not nill
+	// most used construct in go
+	// uninitialized slice is nil
+	var nums []int
 
-	fmt.Println(nums)
-	fmt.Println(bums)
+	fmt.Println(nums == nil)
+
+	fmt.Println(len(nums))
+
+	
+
 }
