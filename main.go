@@ -10,6 +10,7 @@ func main() {
 	var nums =  make([]int, 2, 5)
 	fmt.Println(cap(nums))
 	// capacity = maximum numbers of elements can fit.
+	// length = number of ACTUAL elements which are there.
 	fmt.Println(nums == nil)
 
 	nums = append(nums, 1)
