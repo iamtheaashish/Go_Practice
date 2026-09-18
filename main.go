@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"slices"
 )
 
 func main() {
@@ -40,9 +39,23 @@ func main() {
 	// var nums = []int{1,2,3}
 
 	// fmt.Println(nums[1:2])
-	var nums1 = []int{1,2,3}
-	var nums2 = []int{1,2,3}
+	// var nums1 = []int{1,2,3}
+	// var nums2 = []int{1,2,3}
 
-	fmt.Println(slices.Equal(nums1, nums2))
+	// fmt.Println(slices.Equal(nums1, nums2))
+
+	var nilMap map[string]int
+	fmt.Println(nilMap)
+
+	totalWins := map[string]int{}
+	fmt.Println(totalWins)
+
+	teams := map[string][]string {
+		"Orcas": []string{"Fred", "Ralph", "Bijou"},
+		"Lions": []string{"Sarah", "Peter", "Billie"},
+		"Kittens": []string{"Waldo", "Raul", "Ze"},
+	}
+
+	fmt.Println(teams)
 
 }
