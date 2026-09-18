@@ -110,16 +110,17 @@ func main() {
 	// }
 
 	// fmt.Println(maps.Equal(m, n))
-	intSet := map[int]bool{
-		vals := []int{5,10,3,4,63,234,434,53}
-		for _, v := range vals {
-			intSet[v] = true
-		}
-	}
-	fmt.Println(len(vals), len(intSet))
-	fmt.Println(intSet[5])
-	fmt.Println(intSet[500])
-	if intSet[100]
-		fmt.Println("100 is in the set")
+	// intSet := map[int]bool{
+	// 	vals := []int{5,10,3,4,63,234,434,53}
+	// 	for _, v := range vals {
+	// 		intSet[v] = true
+	// 	}
+	// }
+	// fmt.Println(len(vals), len(intSet))
+	// fmt.Println(intSet[5])
+	// fmt.Println(intSet[500])
+	// if intSet[100]
+	// 	fmt.Println("100 is in the set")
 
+	
 }
