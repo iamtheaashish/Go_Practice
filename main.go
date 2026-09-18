@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"maps"
 )
 
 func main() {
@@ -122,5 +121,29 @@ func main() {
 	// if intSet[100]
 	// 	fmt.Println("100 is in the set")
 
-	
+	type person struct {
+		name string
+		age int
+		pet string
+	}
+
+	var fred person
+
+	bob := person{}
+
+	julia := person{
+		"Julia",
+		40,
+		"cat",
+	}
+
+	beth := person{
+		age: 30,
+		name: "Beth",
+	}
+
+	fmt.Println(fred)
+	fmt.Println(bob)
+	fmt.Println(beth)
+	fmt.Println(julia)
 }
