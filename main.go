@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"maps"
 )
 
 func main() {
@@ -83,18 +84,31 @@ func main() {
 	// v, ok = m["goodbye"]
 	// fmt.Println(v, ok)
 
+	// m := map[string]int{
+	// 	"hello" : 5,
+	// 	"world" : 10,
+	// }
+
+	// fmt.Println(m, len(m))
+
+	// delete(m, "hello")
+
+	// fmt.Println(m)
+
+	// clear(m)
+
+	// fmt.Println(m, len(m))
+
+	// comparing maps
 	m := map[string]int{
 		"hello" : 5,
 		"world" : 10,
 	}
+	n := map[string]int{
+		"world" : 5,
+		"hello" : 10,
+	}
 
-	fmt.Println(m, len(m))
+	fmt.Println(maps.Equal(m, n))
 
-	delete(m, "hello")
-
-	fmt.Println(m)
-
-	clear(m)
-
-	fmt.Println(m, len(m))
 }
