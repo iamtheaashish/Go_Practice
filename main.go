@@ -147,11 +147,20 @@ func main() {
 	// fmt.Println(beth)
 	// fmt.Println(julia)
 
-	 m := make(map[string]string)
+	//  m := make(map[string]string)
 
-	 m["name"] = "golang"
-	 m["area"] = "backend"
+	//  m["name"] = "golang"
+	//  m["area"] = "backend"
 
-	 fmt.Println(m["name"], m["area"])
-	 
+	//  fmt.Println(m["name"], m["area"])
+
+	m := make(map[string]int)
+	m["age"] = 30
+	fmt.Println(m["phone"])
+
+	delete(m, "price")
+	fmt.Println(len(m))
+
+	clear(m)
+
 }
