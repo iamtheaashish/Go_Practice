@@ -121,29 +121,37 @@ func main() {
 	// if intSet[100]
 	// 	fmt.Println("100 is in the set")
 
-	type person struct {
-		name string
-		age int
-		pet string
-	}
+	// type person struct {
+	// 	name string
+	// 	age int
+	// 	pet string
+	// }
 
-	var fred person
+	// var fred person
 
-	bob := person{}
+	// bob := person{}
 
-	julia := person{
-		"Julia",
-		40,
-		"cat",
-	}
+	// julia := person{
+	// 	"Julia",
+	// 	40,
+	// 	"cat",
+	// }
 
-	beth := person{
-		age: 30,
-		name: "Beth",
-	}
+	// beth := person{
+	// 	age: 30,
+	// 	name: "Beth",
+	// }
 
-	fmt.Println(fred)
-	fmt.Println(bob)
-	fmt.Println(beth)
-	fmt.Println(julia)
+	// fmt.Println(fred)
+	// fmt.Println(bob)
+	// fmt.Println(beth)
+	// fmt.Println(julia)
+
+	 m := make(map[string]string)
+
+	 m["name"] = "golang"
+	 m["area"] = "backend"
+
+	 fmt.Println(m["name"], m["area"])
+	 
 }
