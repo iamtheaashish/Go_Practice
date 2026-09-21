@@ -169,20 +169,30 @@ func main() {
 	// }
 
 	// iterating over data structures
-	nums := []int {6,7,8}
+	// nums := []int {6,7,8}
 
-	for i:=0; i < len(nums); i++ {
-		fmt.Println(nums[i])
-	}
+	// for i:=0; i < len(nums); i++ {
+	// 	fmt.Println(nums[i])
+	// }
 
-	sum := 0;
+	// sum := 0;
 
-	for _, num := range nums {
+	// for _, num := range nums {
 		
-		sum = sum + num
+	// 	sum = sum + num
 
-		fmt.Println(sum)
+	// 	fmt.Println(sum)
+	// }
+
+	// map and range together
+	m := map[string]int {
+		"Age" : 20,
+		"Bank" : 500,
+		"Salary" : 26000,
 	}
 
+	for k, v := range m {
+		fmt.Println(k, v)
+	}
 	
 }
