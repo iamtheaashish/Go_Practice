@@ -185,14 +185,18 @@ func main() {
 	// }
 
 	// map and range together
-	m := map[string]int {
-		"Age" : 20,
-		"Bank" : 500,
-		"Salary" : 26000,
-	}
+	// m := map[string]int {
+		// "Age" : 20,
+		// "Bank" : 500,
+		// "Salary" : 26000,
+	// }
+// 
+	// for k, v := range m {
+		// fmt.Println(k, v)
+	// }
 
-	for k, v := range m {
-		fmt.Println(k, v)
+	for i, c := range "Aashish is a millionaire at age 23"{
+		fmt.Println(i, c)
 	}
 	
 }
