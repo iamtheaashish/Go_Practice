@@ -7,7 +7,6 @@ import (
 func main() {
 	// most used construct in go
 	// uninitialized slice is nil
-	
 
 	// var nums =  make([]int, 2, 5)
 	// // fmt.Println(cap(nums))
@@ -24,18 +23,18 @@ func main() {
 
 	// nums[0] = 3
 
-// 	var nums = make([]int, 0, 5)
-// 	nums = append(nums, 2)
-// 	var nums2 = make([]int, len(nums))
+	// 	var nums = make([]int, 0, 5)
+	// 	nums = append(nums, 2)
+	// 	var nums2 = make([]int, len(nums))
 
-// 	copy(nums2, nums)
+	// 	copy(nums2, nums)
 
-// 	fmt.Println(nums, nums2)
-// 	fmt.Println(cap(nums), cap(nums2))
-// 	fmt.Println(len(nums), cap(nums2))
-// 
+	// 	fmt.Println(nums, nums2)
+	// 	fmt.Println(cap(nums), cap(nums2))
+	// 	fmt.Println(len(nums), cap(nums2))
+	//
 
-// slice operator
+	// slice operator
 	// var nums = []int{1,2,3}
 
 	// fmt.Println(nums[1:2])
@@ -76,7 +75,7 @@ func main() {
 
 	// v, ok := m["hello"]
 	// fmt.Println(v, ok)
-	
+
 	// v, ok = m["world"]
 	// fmt.Println(v, ok)
 
@@ -178,7 +177,7 @@ func main() {
 	// sum := 0;
 
 	// for _, num := range nums {
-		
+
 	// 	sum = sum + num
 
 	// 	fmt.Println(sum)
@@ -186,17 +185,30 @@ func main() {
 
 	// map and range together
 	// m := map[string]int {
-		// "Age" : 20,
-		// "Bank" : 500,
-		// "Salary" : 26000,
+	// "Age" : 20,
+	// "Bank" : 500,
+	// "Salary" : 26000,
 	// }
-// 
+	//
 	// for k, v := range m {
-		// fmt.Println(k, v)
+	// fmt.Println(k, v)
 	// }
 
-	for i, c := range "Aashish is a millionaire at age 23"{
-		fmt.Println(i, string(c))
-	}
-	
+	// for i, c := range "Aashish is a millionaire at age 23"{
+	// 	fmt.Println(i, string(c))
+	// }
+
+	fmt.Println(add(500,750))
+
+	fmt.Println(getLanguages())
+
+}
+
+func add(a int, b int) int {
+	return a + b
+}
+
+// a function in go can return multiple values.
+func getLanguages() (string, string, string){
+	return "C++", "C#", "Golang"
 }
