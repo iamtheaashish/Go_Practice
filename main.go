@@ -4,7 +4,28 @@ import (
 	"fmt"
 )
 
+func add(a int, b int) int {
+	return a + b
+}
+
+// a function in go can return multiple values.
+func getLanguages() (string, string, string){
+	return "C++", "C#", "Golang"
+}
+
 func main() {
+
+	fmt.Println(add(500,750))
+
+	lang1, lang2, lang3 := getLanguages()
+
+	fmt.Println(lang1, lang2, lang3)
+
+	// compiler ignore
+	lan1, lan2, _ := getLanguages()
+
+	fmt.Println(lan1, lan2)
+
 	// most used construct in go
 	// uninitialized slice is nil
 
@@ -196,19 +217,6 @@ func main() {
 
 	// for i, c := range "Aashish is a millionaire at age 23"{
 	// 	fmt.Println(i, string(c))
-	// }
-
-	fmt.Println(add(500,750))
-
-	fmt.Println(getLanguages())
-
 }
 
-func add(a int, b int) int {
-	return a + b
-}
 
-// a function in go can return multiple values.
-func getLanguages() (string, string, string){
-	return "C++", "C#", "Golang"
-}
