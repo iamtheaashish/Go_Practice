@@ -154,13 +154,35 @@ func main() {
 
 	//  fmt.Println(m["name"], m["area"])
 
-	m := make(map[string]int)
-	m["age"] = 30
-	fmt.Println(m["phone"])
+	// m := make(map[string]int)
+	// m["age"] = 30
+	// fmt.Println(m["phone"])
 
-	delete(m, "price")
-	fmt.Println(len(m))
+	// delete(m, "price")
+	// fmt.Println(len(m))
 
-	clear(m)
+	// clear(m)
 
+	// m := map[string]int{
+	// 	"price" : 40,
+	// 	"phone" : 3,
+	// }
+
+	// iterating over data structures
+	nums := []int {6,7,8}
+
+	for i:=0; i < len(nums); i++ {
+		fmt.Println(nums[i])
+	}
+
+	sum := 0;
+
+	for _, num := range nums {
+		
+		sum = sum + num
+
+		fmt.Println(sum)
+	}
+
+	
 }
