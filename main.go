@@ -196,7 +196,7 @@ func main() {
 	// }
 
 	for i, c := range "Aashish is a millionaire at age 23"{
-		fmt.Println(i, c)
+		fmt.Println(i, string(c))
 	}
 	
 }
